@@ -1,0 +1,11 @@
+.header-box{
+	background: rgb(2,0,36);
+    background: linear-gradient(
+0deg
+, rgba(2,0,36,1) 0%, rgba(0,123,240,1) 0%, rgba(0,255,209,1) 100%);
+    color: white;
+}
+
+.smooth-shadow{
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}

@@ -1,0 +1,16 @@
+<div class="col-md-12 mb-5 p-5 header-box">
+  <h1>Edit post</h1>
+  <div class="col-md-12 text-right p-2">
+    <a class="btn btn-success" href="/">Back to list</a>
+  </div>
+</div>
+
+<div class="col-md-12 p-5">
+  <div class="alert alert-success mb-3" role="alert" *ngIf="msg">
+    {{ msg }}
+  </div>
+  <form [formGroup]="form" (ngSubmit)="editPost($event)">
+    <formly-form [form]="form" [fields]="fields" [model]="post"></formly-form>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

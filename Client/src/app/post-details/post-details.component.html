@@ -1,0 +1,25 @@
+<div class="col-md-12 mb-5 p-5 header-box">
+    <h1>Post : {{post.title}}</h1>
+
+    <div class="col-md-12 text-right p-2">
+        <a class="btn btn-success" href="/">Back to list</a>
+      </div>
+
+  </div>
+  
+  <div class="col-md-10 offset-md-1" >
+    <div class="col-md-12  m-2 p-4">
+      <p style="font-size: large;">{{ post.body }}</p>
+
+      <h3>Comment(s)</h3>
+
+      <div class="col-md-12 mt-2 " *ngFor="let comment of post.comments">
+        <div class="col-md-12 smooth-shadow m-2 p-4">
+          <b class="d-block">{{ comment.name }}</b>
+          <p>{{ comment.body }}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
